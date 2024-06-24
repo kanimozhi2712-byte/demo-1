@@ -1,0 +1,70 @@
+PS C:\Users\desikan ledger\Desktop\Git> git clone https://github.com/kanimozhi2712-byte/demo-1.git
+Cloning into 'demo-1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS C:\Users\desikan ledger\Desktop\Git> cd demo-1.git
+cd : Cannot find path 'C:\Users\desikan ledger\Desktop\Git\demo-1.git' because it does not exist.
+At line:1 char:1
++ cd demo-1.git
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\desika...\Git\demo-1.git:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\desikan ledger\Desktop\Git> cd demo-1    
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git add test.txt
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git add test2.txt
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git commit -m "test2.txt file added"
+[main 744e8c7] test2.txt file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git push main orgin
+error: src refspec orgin does not match any
+error: failed to push some refs to 'main'
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git push main orgin
+error: src refspec orgin does not match any
+error: failed to push some refs to 'main'
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git push main origin
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\desikan ledger\Desktop\Git\demo-1> git push  origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kanimozhi2712-byte/demo-1.git
+   6e545ff..744e8c7  main -> main
+PS C:\Users\desikan ledger\Desktop\Git\demo-1>
